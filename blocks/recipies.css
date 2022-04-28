@@ -1,0 +1,43 @@
+.recipies {
+  background-image: url("../images/background_recipes.svg");
+  background-color: #ffffff;
+  background-size: cover;
+  background-position: center;
+  margin: 0px;
+  padding: 0px;
+  color: #000000;
+}
+
+.recipies__title {
+  max-width: 500px;
+  padding-top: 100px;
+  margin: 0px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
+  padding-left: 80px;
+}
+
+.recipies__subtitle {
+  max-width: 438px;
+  padding-top: 24px;
+  margin: 0px;
+  font-family: Noto Serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  padding-left: 80px;
+}
+
+.recipies__videos {
+  width: 1000px;
+  display: flex;
+  column-gap: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 80px;
+  padding-bottom: 215px;
+}

@@ -1,0 +1,23 @@
+.video {
+  width: 480px;
+}
+
+.video__description {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 24px;
+}
+
+.video__label {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  margin: 0px;
+}
+
+.video__window {
+  border: none;
+}
