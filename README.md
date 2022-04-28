@@ -13,4 +13,5 @@ This is the second project of the Web Development program at Practicum by Yandex
 
 ## Plan on improving the project
 
-Add your ideas here :)
+1. Connecting a working backend
+2. When viewing the page on mobile devices, the image in header is overlapping the header text. This needs to be fixed in future.
