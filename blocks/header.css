@@ -23,15 +23,17 @@
   line-height: 72px;
   max-width: 729px;
   margin-bottom: 0px;
+  z-index: 2;
+  position: relative;
 }
 
 .header__image {
-  z-index: 1;
   position: absolute;
   top: 124px;
   right: 5px;
   width: 568px;
   height: 568px;
+  z-index: 1;
 }
 
 .header__paragraph {
@@ -42,6 +44,8 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
+  position: relative;
+  z-index: 2;
 }
 
 .header__span-accent {
@@ -65,6 +69,8 @@
   line-height: 30px;
   max-width: 638px;
   margin: 28px 0 0;
+  position: relative;
+  z-index: 2;
 }
 
 .header__footer {
@@ -77,6 +83,8 @@
   padding: 40px 80px 0;
   justify-content: space-between;
   box-sizing: border-box;
+  z-index: 2;
+  position: absolute;
 }
 
 .header__hours {
