@@ -43,15 +43,9 @@
   padding-bottom: 215px;
 }
 
-.video {
-  width: 480px;
-}
-
-.video__description {
+.recipies__video-info {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  padding-top: 24px;
 }
 
 .recipies__video-caption {
