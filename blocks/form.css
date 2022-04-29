@@ -1,6 +1,6 @@
 .form {
   max-width: 385px;
-  width: 350px;
+  width: 100%;
 }
 
 .form__elements {
@@ -8,13 +8,15 @@
   flex-direction: column;
   gap: 32px;
   border: none;
+  padding: 0;
+  margin: 0;
 }
 
 .form__label {
   display: flex;
   flex-direction: column;
   gap: 8px;
-  font-family: Inter;
+  font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -29,10 +31,11 @@
   color: #838383;
   padding-left: 10px;
   padding-right: 10px;
+  border-color: none;
 }
 
 .form__input::-webkit-input-placeholder {
-  font-family: Inter;
+  font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -41,7 +44,7 @@
 }
 
 .form__input::-moz-placeholder {
-  font-family: Inter;
+  font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -49,7 +52,7 @@
   color: #838383;
 }
 .form__input::-ms-input-placeholder {
-  font-family: Inter;
+  font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -58,7 +61,7 @@
 }
 
 .form__input::placeholder {
-  font-family: Inter;
+  font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -71,15 +74,12 @@
   background-color: #2f80ed;
   opacity: 1;
   transition: opacity 0.5s linear 0s;
-  font-family: Inter;
-
+  font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
-
   font-weight: 500;
-
   font-size: 16px;
-
   line-height: 20px;
+  border: none;
 }
 
 .form__button:hover {
@@ -99,7 +99,7 @@
   border-radius: 2px;
 }
 .form__checkbox-text {
-  font-family: Inter;
+  font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;

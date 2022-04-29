@@ -10,9 +10,11 @@
       content="HTML, CSS, animations, coffee shop landing page"
     />
     <meta name="author" content="Sekhar Mekala" />
-    <link rel="stylesheet" href="./vendor/normalize.css" />
     <link rel="stylesheet" href="./pages/index.css" />
-    <link rel="stylesheet" href="./pages/fonts.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Noto+Serif&display=swap"
+    />
     <link rel="icon" href="./favicon_coffee_bean.ico" />
     <title>Practicum Coffee Shop</title>
   </head>
@@ -30,7 +32,7 @@
               <a href="#menu" class="nav__link">Menu</a>
             </li>
             <li>
-              <a href="#events" class="nav__link">Recipies</a>
+              <a href="#recipies" class="nav__link">Recipies</a>
             </li>
             <li>
               <a href="#book_a_table" class="nav__link">Book a table</a>
@@ -40,16 +42,16 @@
             </li>
           </ul>
         </nav>
-        <section class="header__content">
+        <div class="header__content">
           <h1 class="header__title">
             <span class="header__span-accent">Speciality coffee</span>
-            <span class="header__new-line">in the Practicum Library</span>
+            in the Practicum Library
           </h1>
           <p class="header__description">
             Welcome to our study zone! We have got the coffee to energize you
             and the cozy vibes to help you get creative.
           </p>
-        </section>
+        </div>
         <img
           src="./images/inside_coffee_shop.png"
           alt="Illustration 'Inside the library'"
@@ -57,154 +59,160 @@
         />
         <div class="header__footer">
           <ul class="header__hours">
-            <li>Hours:</li>
-            <li>Monday - Friday (10:00 - 19:00)</li>
-            <li>Saturday - Sunday (11:00 - 18:00)</li>
+            <p class="header__paragraph">Hours:</p>
+            <p class="header__paragraph">Monday - Friday (10:00 - 19:00)</p>
+            <p class="header__paragraph">Saturday - Sunday (11:00 - 18:00)</p>
           </ul>
-          <p class="header__address">
+          <p class="header__paragraph">
             200 Success Avenue, The Town of Practicum
           </p>
         </div>
       </header>
-      <main class="content">
-        <section class="menu">
-          <h1 class="menu__title">Menu</h1>
+      <main>
+        <section id="#menu" class="menu">
+          <h2 class="menu__title">Menu</h2>
           <p class="menu__subtitle">
             We brew coffee from locally roasted, Fairtrade certified beans and
             use biodegradable cups. All teas from our collection are $2/cup.
           </p>
           <div class="menu__cards">
-            <div class="card">
+            <article class="card">
               <h1 class="card__title">Filter</h1>
-              <ul class="card__list-item">
-                <li>Regular (12 oz)</li>
-                <li class="card__list-item-middle">
-                  <hr class="card__list-divider" />
-                </li>
-                <li>$1</li>
-              </ul>
+              <div class="card__content">
+                <ul class="card__list-item">
+                  <li>Regular (12 oz)</li>
+                  <li class="card__list-item-middle">
+                    <hr class="card__list-divider" />
+                  </li>
+                  <li>$1</li>
+                </ul>
 
-              <ul class="card__list-item">
-                <li>Large (16 oz)</li>
-                <li class="card__list-item-middle">
-                  <hr class="card__list-divider" />
-                </li>
-                <li>$1.25</li>
-              </ul>
+                <ul class="card__list-item">
+                  <li>Large (16 oz)</li>
+                  <li class="card__list-item-middle">
+                    <hr class="card__list-divider" />
+                  </li>
+                  <li>$1.25</li>
+                </ul>
 
-              <ul class="card__list-item">
-                <li>XL (20 oz)</li>
-                <li class="card__list-item-middle">
-                  <hr class="card__list-divider" />
-                </li>
-                <li>$1.5</li>
-              </ul>
+                <ul class="card__list-item">
+                  <li>XL (20 oz)</li>
+                  <li class="card__list-item-middle">
+                    <hr class="card__list-divider" />
+                  </li>
+                  <li>$1.5</li>
+                </ul>
 
-              <ul class="card__list-item">
-                <li>Party-size (24 oz, decaf)</li>
-                <li class="card__list-item-middle">
-                  <hr class="card__list-divider" />
-                </li>
-                <li>$1.75</li>
-              </ul>
+                <ul class="card__list-item">
+                  <li>Party-size (24 oz, decaf)</li>
+                  <li class="card__list-item-middle">
+                    <hr class="card__list-divider" />
+                  </li>
+                  <li>$1.75</li>
+                </ul>
 
-              <ul class="card__list-item">
-                <li>Iced Coffee(16 oz)</li>
-                <li class="card__list-item-middle">
-                  <hr class="card__list-divider" />
-                </li>
-                <li>$1.25</li>
-              </ul>
-            </div>
+                <ul class="card__list-item">
+                  <li>Iced Coffee(16 oz)</li>
+                  <li class="card__list-item-middle">
+                    <hr class="card__list-divider" />
+                  </li>
+                  <li>$1.25</li>
+                </ul>
+              </div>
+            </article>
 
-            <div class="card">
+            <article class="card">
               <h1 class="card__title">Espresso</h1>
-              <ul class="card__list-item">
-                <li>Macchiato</li>
-                <li class="card__list-item-middle">
-                  <hr class="card__list-divider" />
-                </li>
-                <li>$2.25</li>
-              </ul>
+              <div class="card__content">
+                <ul class="card__list-item">
+                  <li>Macchiato</li>
+                  <li class="card__list-item-middle">
+                    <hr class="card__list-divider" />
+                  </li>
+                  <li>$2.25</li>
+                </ul>
 
-              <ul class="card__list-item">
-                <li>Cartado</li>
-                <li class="card__list-item-middle">
-                  <hr class="card__list-divider" />
-                </li>
-                <li>$2.5</li>
-              </ul>
+                <ul class="card__list-item">
+                  <li>Cartado</li>
+                  <li class="card__list-item-middle">
+                    <hr class="card__list-divider" />
+                  </li>
+                  <li>$2.5</li>
+                </ul>
 
-              <ul class="card__list-item">
-                <li>Mocha</li>
-                <li class="card__list-item-middle">
-                  <hr class="card__list-divider" />
-                </li>
-                <li>$3</li>
-              </ul>
+                <ul class="card__list-item">
+                  <li>Mocha</li>
+                  <li class="card__list-item-middle">
+                    <hr class="card__list-divider" />
+                  </li>
+                  <li>$3</li>
+                </ul>
 
-              <ul class="card__list-item">
-                <li>Sunrise in the Bay Area (decaf)</li>
-                <li class="card__list-item-middle">
-                  <hr class="card__list-divider" />
-                </li>
-                <li>$10</li>
-              </ul>
-            </div>
+                <ul class="card__list-item">
+                  <li>Sunrise in the Bay Area (decaf)</li>
+                  <li class="card__list-item-middle">
+                    <hr class="card__list-divider" />
+                  </li>
+                  <li>$10</li>
+                </ul>
+              </div>
+            </article>
 
-            <div class="card">
+            <article class="card">
               <h1 class="card__title">Baked Goods</h1>
-              <ul class="card__list-item">
-                <li>Almond Croissant</li>
-                <li class="card__list-item-middle">
-                  <hr class="card__list-divider" />
-                </li>
-                <li>$2</li>
-              </ul>
+              <div class="card__content">
+                <ul class="card__list-item">
+                  <li>Almond Croissant</li>
+                  <li class="card__list-item-middle">
+                    <hr class="card__list-divider" />
+                  </li>
+                  <li>$2</li>
+                </ul>
 
-              <ul class="card__list-item">
-                <li>Banana Bread</li>
-                <li class="card__list-item-middle">
-                  <hr class="card__list-divider" />
-                </li>
-                <li>$1.75</li>
-              </ul>
+                <ul class="card__list-item">
+                  <li>Banana Bread</li>
+                  <li class="card__list-item-middle">
+                    <hr class="card__list-divider" />
+                  </li>
+                  <li>$1.75</li>
+                </ul>
 
-              <ul class="card__list-item">
-                <li>Key Lime Pie</li>
-                <li class="card__list-item-middle">
-                  <hr class="card__list-divider" />
-                </li>
-                <li>$3</li>
-              </ul>
+                <ul class="card__list-item">
+                  <li>Key Lime Pie</li>
+                  <li class="card__list-item-middle">
+                    <hr class="card__list-divider" />
+                  </li>
+                  <li>$3</li>
+                </ul>
 
-              <ul class="card__list-item">
-                <li>Blue Velvet Cake</li>
-                <li class="card__list-item-middle">
-                  <hr class="card__list-divider" />
-                </li>
-                <li>$3.75</li>
-              </ul>
+                <ul class="card__list-item">
+                  <li>Blue Velvet Cake</li>
+                  <li class="card__list-item-middle">
+                    <hr class="card__list-divider" />
+                  </li>
+                  <li>$3.75</li>
+                </ul>
 
-              <ul class="card__list-item">
-                <li>Web Cookie</li>
-                <li class="card__list-item-middle">
-                  <hr class="card__list-divider" />
-                </li>
-                <li>$2</li>
-              </ul>
+                <ul class="card__list-item">
+                  <li>Web Cookie</li>
+                  <li class="card__list-item-middle">
+                    <hr class="card__list-divider" />
+                  </li>
+                  <li>$2</li>
+                </ul>
 
-              <ul class="card__list-item">
-                <li>Fresh Bug'uette</li>
-                <li class="card__list-item-middle">
-                  <hr class="card__list-divider" />
-                </li>
-                <li>$0.25</li>
-              </ul>
-            </div>
+                <ul class="card__list-item">
+                  <li>Fresh Bug'uette</li>
+                  <li class="card__list-item-middle">
+                    <hr class="card__list-divider" />
+                  </li>
+                  <li>$0.25</li>
+                </ul>
+              </div>
+            </article>
           </div>
         </section>
-        <section class="recipies">
+        <section id="recipies" class="recipies">
           <h1 class="recipies__title">Recipies</h1>
           <p class="recipies__subtitle">
             Check out some recipes we've collected for your home-brewing
@@ -239,7 +247,7 @@
             </div>
           </div>
         </section>
-        <section class="reservation">
+        <section id="book_a_table" class="reservation">
           <h1 class="reservation__title">Book a table</h1>
           <form class="form reservation__form">
             <fieldset class="form__elements">
@@ -290,7 +298,7 @@
             </fieldset>
           </form>
         </section>
-        <section class="about">
+        <section id="contacts" class="about">
           <h1 class="about__title">
             About the<span class="about__newline">coffee shop</span>
           </h1>

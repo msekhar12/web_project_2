@@ -1,7 +1,7 @@
 .nav {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   margin: 0px;
   padding-left: 30px;
   padding-right: 80px;
@@ -17,13 +17,20 @@
   font-size: 16px;
   font-weight: 500;
   font-style: normal;
+  margin: 0;
+  padding: 0;
 }
 
 .nav__link {
   color: #000000;
   text-decoration: none;
-  font-weight: bold;
   transition: color 0.05s linear 0s;
+
+  font-family: "Inter", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .nav__link:hover {
