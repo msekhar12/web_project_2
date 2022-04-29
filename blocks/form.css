@@ -3,7 +3,7 @@
   width: 100%;
 }
 
-.form__elements {
+.form__fieldset {
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -80,6 +80,10 @@
   font-size: 16px;
   line-height: 20px;
   border: none;
+  border-radius: 4px;
+  max-width: 385px;
+  height: 60px;
+  padding: 0;
 }
 
 .form__button:hover {
@@ -91,6 +95,12 @@
   gap: 12px;
   align-content: flex-start;
   margin: auto;
+
+  font-family: "Inter", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .form__checkbox {
@@ -98,6 +108,7 @@
   height: 20px;
   border-radius: 2px;
 }
+/*
 .form__checkbox-text {
   font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
@@ -105,3 +116,4 @@
   font-size: 16px;
   line-height: 20px;
 }
+*/

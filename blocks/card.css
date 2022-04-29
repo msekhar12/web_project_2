@@ -1,14 +1,12 @@
 .card {
-  /*max-width: 600px;
-  min-width: 400px;*/
-  width: 385px;
+  width: calc(50% - 100px);
+  max-width: 600px;
 }
 
 .card__title {
   text-align: left;
   padding: 0px 0px 32px 0px;
   margin: 0;
-
   font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -20,6 +18,9 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
 }
 
 .card__list-item {
@@ -34,13 +35,10 @@
   margin: 0;
 }
 
-.card__list-item-middle {
-  flex-grow: 1;
-}
-
 .card__list-divider {
-  margin-left: 3px;
-  margin-right: 3px;
-  position: relative;
-  top: 8px;
+  display: flex;
+  flex-grow: 1;
+  margin-left: 8px;
+  margin-right: 8px;
+  border-bottom: 1px solid #fff;
 }
